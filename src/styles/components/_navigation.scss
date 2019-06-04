@@ -1,0 +1,50 @@
+.navigation {
+    display: flex;
+    flex-flow: column; 
+    align-items: center;
+    height: 100%;
+    @include atTablet {
+        flex-flow: row; 
+    }
+}
+
+.navigation-item {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+    @include atTablet {
+        display: flex;
+        width: auto;
+        height: 100%;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.navigation-item a {
+    color: $dark-orange;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    @include atTablet {
+        color: white;
+        width: auto;
+        height: 100%;
+        padding: 1.6rem 1rem;
+        border-bottom: 4px solid transparent;
+    }
+    &:hover,
+    &:active,
+    &.active {
+        background: #8F5C2C;
+        @include atTablet {
+            background: #8F5C2C;
+            border-bottom: 4px solid $brownish;
+            color: white;
+        }
+    }
+}
+

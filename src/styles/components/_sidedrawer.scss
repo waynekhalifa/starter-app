@@ -1,0 +1,50 @@
+.sidedrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background: white;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    transition: transform .3s ease-out;
+    @include atTablet {
+        display: none;
+    }
+}
+
+.sidedrawer__logo {
+    height: 11%;
+    margin-bottom: 2rem;
+}
+
+.sidedrawer__open {
+    transform: translateX(0);
+}
+
+.sidedrawer__close {
+    transform: translateX(-100%);
+}
+
+.drawer-toggle{
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+
+    div {
+        background: white;
+        width: 90%;
+        height: 3px;
+    }
+
+    @include atTablet {
+        display: none;
+    }
+}

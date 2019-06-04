@@ -1,0 +1,26 @@
+.toolbar {
+    height: 5.6rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #703B09;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    z-index: 199;
+}
+
+.toolbar__logo {
+    height: 80%;
+}
+
+.toolbar__nav {
+    height: 100%;
+    display: none;
+    @include atTablet {
+        display: block;
+    }
+}
